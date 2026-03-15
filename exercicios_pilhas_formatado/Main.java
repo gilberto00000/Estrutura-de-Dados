@@ -44,6 +44,23 @@ public class Main {
 
         System.out.println(Palindromo.verificar_palindromo(palavra) ? palavra + " é um palíndromo" : palavra + " não é um palíndromo");
         System.out.println(Palindromo.verificar_palindromo(palavra2) ? palavra2 + " é um palíndromo" : palavra2 + " não é um palíndromo");
+
+
+        System.out.println("---------------6. Inverter a ordem das palavras---------------");
+
+
+        String frase = "eu gosto de java";
+        String[] palavras = frase.split(" ");
+
+        Pilha pilha3 = new Pilha(palavras.length);
+
+        for (int i = 0; i < palavras.length; i++) {
+            pilha3.empilha(palavras[i]);
+        }
+
+        while(!pilha3.esta_vazio()) {
+            System.out.print(pilha3.desempilha() +" ");
+        }
         
     }
 
