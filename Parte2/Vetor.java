@@ -97,4 +97,14 @@ public class Vetor {
         remove(posicao);
         return true;
     }
+
+
+    // Questões 7 8 e 9
+
+
+
+
+
+
+
 }
