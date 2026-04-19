@@ -1,24 +1,35 @@
-void main() {
+public class Main {
+    public static void main(String[] args) {
 
-    int[] teste = new int[5];
+        ListaEncadeada lista = new ListaEncadeada();
 
-    teste[0] = 2;
-    teste[1] = 10;
-    teste[2] = 6;
-    teste[3] = 4;
-    teste[4] = 1;
+        lista.inserir(2);
+        lista.inserir(10);
+        lista.inserir(6);
+        lista.inserir(4);
+        lista.inserir(1);
 
-    for (int i = 0; i < teste.length; i++) {
-        System.out.println(teste[i]);
+        System.out.println("Lista original:");
+        lista.mostrar();
+
+        lista.bubbleSortLista();
+
+        System.out.println("Lista ordenada:");
+        lista.mostrar();
+
+        lista.excluirPrimeiro();
+        System.out.println("Após excluir primeiro:");
+        lista.mostrar();
+
+        lista.excluirUltimo();
+        System.out.println("Após excluir último:");
+        lista.mostrar();
+
+        lista.excluir(6);
+        System.out.println("Após excluir valor 6:");
+        lista.mostrar();
+
+        System.out.println("Buscar 10: " + lista.buscar(10));
+        System.out.println("Buscar 2: " + lista.buscar(2));
     }
-
-    Bubble.bubble(teste);
-    System.out.println();
-    System.out.println("/////////////// VERIFICANDO ////////////////");
-    System.out.println();
-
-    for (int i = 0; i < teste.length; i++) {
-        System.out.println(teste[i]);
-    }
-
 }
