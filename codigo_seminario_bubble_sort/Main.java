@@ -3,9 +3,11 @@ public class Main {
 
         ListaEncadeada lista = new ListaEncadeada();
 
-        lista.inserir(2);
-        lista.inserir(10);
-        lista.inserir(6);
+        lista.inserirInicio(2);
+        lista.inserirInicio(10);
+
+        lista.inserirMeio(6, 1);
+
         lista.inserir(4);
         lista.inserir(1);
 
