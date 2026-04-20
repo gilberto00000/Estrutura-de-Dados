@@ -1,6 +1,44 @@
 public class ListaEncadeada {
         No inicio;
 
+        
+
+        //adiciona no inicio
+        public void inserirInicio(int valor) {
+
+            No novo = new No(valor);
+            novo.proximo = inicio;
+            inicio = novo;
+
+        }
+
+        //adicionar no meio
+        public void inserirMeio(int valor, int posicao){
+
+            if(posicao == 0){
+                inserirInicio(valor);
+                return;
+            }
+
+            No atual = inicio;
+            int contador = 0
+
+            while (atual != null && contador < posicao -1) {
+                atual = atual.proximo;
+                contador++;
+            }
+
+            if(atual == null){
+                System.out.println("Posição inválida")
+                return;
+            }
+
+            novo.proximo = atual.proximo;
+            atual.proximo = novo;
+
+        }
+        
+        //adicionar ultimo
         public void inserir(int valor) {
             No novo = new No(valor);
 
@@ -14,6 +52,9 @@ public class ListaEncadeada {
                 atual.proximo = novo;
             }
         }
+
+
+        
 
         public void excluirPrimeiro() {
             if (inicio != null) {
