@@ -9,7 +9,9 @@ public class Main {
         ranking.inserir("Pedro", 70);
         ranking.inserir("Maria", 90);
 
+
         ranking.atualizar("Ana", 100);
+
 
         System.out.println("Ranking:");
         ranking.exibir();
