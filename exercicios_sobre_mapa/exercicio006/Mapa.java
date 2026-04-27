@@ -1,5 +1,6 @@
 public class Mapa {
 
+
     Associacao[] dados = new Associacao[10];
     int tamanho = 0;
 

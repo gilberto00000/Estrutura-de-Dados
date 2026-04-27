@@ -1,5 +1,6 @@
 public class Ranking {
 
+
     Jogador[] jogadores = new Jogador[10];
     int tamanho = 0;
 
